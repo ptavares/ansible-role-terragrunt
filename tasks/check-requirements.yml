@@ -1,0 +1,8 @@
+##################################
+# Check requirements before insall
+##################################
+- name: Ensure dependancies presence's
+  apt:
+    name:
+      - curl
+    state: present

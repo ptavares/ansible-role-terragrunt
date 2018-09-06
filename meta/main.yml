@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Patrick Tavares
+  description: Ansible role for installating terragrunt
+  company: ptavares
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - system
+    - terragrunt
+    - gruntwork-io
+dependencies: []
