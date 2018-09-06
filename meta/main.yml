@@ -11,5 +11,5 @@ galaxy_info:
   galaxy_tags:
     - system
     - terragrunt
-    - gruntwork-io
+    - gruntwork
 dependencies: []
