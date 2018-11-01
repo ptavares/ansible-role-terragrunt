@@ -21,7 +21,7 @@ Available variables are listed below, along with default values (see [defaults/m
 ```yaml
 # By default, module will download last version
 # To specify a version, use this below param
-terragrunt_install_version: X.X.X
+terragrunt_install_version: vX.X.X
 ```
 ### Download information
 
