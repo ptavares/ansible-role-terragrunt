@@ -6,13 +6,13 @@
 ##############################
 # By default, module will download last version
 # To specify a version, use this below param
-# terragrunt_install_version: X.X.X
+# terragrunt_install_version: vX.X.X
 
 ###############################################
 # Download information - Modify only if needed
 ###############################################
 # Directory where executable will be downloaded before installation
-terragrunt_download_location: /tmp/
+terragrunt_download_location: /tmp
 # Url to terragrunt binarie
 terragrunt_url: "https://github.com/gruntwork-io/terragrunt/releases/download/{{ terragrunt_install_version }}/terragrunt_linux_amd64"
 # Downloaded file name 
