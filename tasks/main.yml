@@ -10,9 +10,10 @@
 # Get last version
 - name: Get last terragrunt version
   shell: |
-    set -e
+    set -o pipefail
     curl https://api.github.com/repos/gruntwork-io/terragrunt/releases | grep tag_name | head -n 1 | cut -d '"' -f 4
   args:
+    executable: /bin/bash
     warn: False
   failed_when: False
   changed_when: False
@@ -20,7 +21,7 @@
   when: terragrunt_install_version is not defined
   tags:
     - terragrunt-install-all
-    - terragrunt-install-update  
+    - terragrunt-install-update
 
 # Init version if not defined
 - name: Init terragrunt version
@@ -29,13 +30,15 @@
   when: terragrunt_install_version is not defined
   tags:
     - terragrunt-install-all
-    - terragrunt-install-update  
+    - terragrunt-install-update
 
 # Check current version
 - name: Check current terragrunt Version
   shell: |
-    set -e
+    set -o pipefail
     terragrunt --version | head -n 1 | grep {{ terragrunt_install_version }}
+  args:
+    executable: /bin/bash
   failed_when: False
   changed_when: False
   register: current_terragrunt_version
