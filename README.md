@@ -1,7 +1,7 @@
 [![Build Status](https://img.shields.io/travis/ptavares/ansible-role-terragrunt/master.svg?style=flat-square)](https://travis-ci.org/ptavares/ansible-role-terragrunt)
 [![Ansible Role](https://img.shields.io/ansible/role/29419.svg)](https://galaxy.ansible.com/ptavares/ansible-role-terragrunt)
-[![Ansible Role](https://img.shields.io/ansible/quality/29419.svg)](https://galaxy.ansible.com/ptavares/ansible-role-packer)
-[![Ansible Role](https://img.shields.io/ansible/role/d/29419.svg)](https://galaxy.ansible.com/ptavares/ansible-role-packer)
+[![Ansible Role](https://img.shields.io/ansible/quality/29419.svg)](https://galaxy.ansible.com/ptavares/ansible-role-terragrunt)
+[![Ansible Role](https://img.shields.io/ansible/role/d/29419.svg)](https://galaxy.ansible.com/ptavares/ansible-role-terragrunt)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/ptavares/ansible-role-terragrunt/blob/master/LICENSE)
 
 ansible-role-terragrunt
