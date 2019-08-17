@@ -4,14 +4,7 @@
 - name: Set Required Package
   set_fact: packages="['bash','curl']"
 
-- name: Ensure dependancies presence's (Debian / Ubuntu)
-  apt:
+- name: Ensure dependancies presence's
+  package:
     name: "{{ packages }}"
     state: present
-  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
-
-- name: Ensure dependancies presence's (CentOS / RedHat)
-  yum:
-    name: "{{ packages }}"
-    state: present
-  when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
